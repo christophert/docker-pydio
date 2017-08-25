@@ -7,7 +7,7 @@ ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # package version
-ENV PYDIO_VER="8.0.0"
+ENV PYDIO_VER="8.0.1"
 
 # install packages
 RUN \
@@ -48,6 +48,7 @@ RUN \
 	php7-snmp \
 	php7-sqlite3 \
 	php7-xmlrpc \
+    samba-client \
 	re2c \
 	rsync \
 	sqlite \
